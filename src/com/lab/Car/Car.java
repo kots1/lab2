@@ -1,10 +1,10 @@
 package com.lab.Car;
 
 public class Car {
-    private String id;
+    private int id;
     private String model;
     private int year;
-    private double price;
+    private int price;
     private int registrationNumber;
 
     @Override
@@ -14,11 +14,11 @@ public class Car {
                 ", model='" + model + '\'' +
                 ", year=" + year +
                 ", price=" + price +
-                ", registration number=" + registrationNumber +
+                "$ , registration number=" + registrationNumber +
                 '}';
     }
 
-    public Car(String id, String model, int year, double price, int registrationNumber) {
+    public Car(int id, String model, int year, int price, int registrationNumber) {
         this.id = id;
         this.model = model;
         this.year = year;
@@ -26,11 +26,11 @@ public class Car {
         this.registrationNumber = registrationNumber;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -50,11 +50,11 @@ public class Car {
         this.year = year;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
